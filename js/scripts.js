@@ -8,6 +8,9 @@ const formInputs = document.querySelectorAll("[data-input]");
 
 const closeButton = document.querySelector("#close-message");
 
+
+
+
 // Validate CEP Input
 cepInput.addEventListener("keypress", (e) => {
   const onlyNumbers = /[0-9]|\./;
@@ -22,6 +25,8 @@ cepInput.addEventListener("keypress", (e) => {
     e.preventDefault();
     return;
   }
+
+  
 });
 
 // Evento to get address
@@ -32,6 +37,8 @@ cepInput.addEventListener("keyup", (e) => {
   if (inputValue.length === 8) {
     getAddress(inputValue);
   }
+
+  
 });
 
 // Get address from API
